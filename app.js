@@ -43,7 +43,8 @@ function turnClick(square) {
 
 function turn(squareId, player) {
 	origBoard[squareId] = player;
-    console.log(origBoard);
+    document.getElementById(squareId).style.color =
+    player == huPlayer ? "#FFE194" : "#FEA1A1";
 	document.getElementById(squareId).innerText = player;
     let finish = checkWin(origBoard, player)
     if (finish!= null) gameOver(finish);
