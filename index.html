@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Output Css-->
+    <link href="/dist/output.css" rel="stylesheet">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/3dc98b9cb4.js" crossorigin="anonymous"></script>
+    <title>calculator Agent</title>
+</head>
+<body class="h-screen bg-primary flex justify-center items-center">
+    <div class="absolute top-12 text-3xl">
+        <h1 class="winner text-[#1B9C85] font-bold uppercase hidden"></h1>
+    </div>
+    <section class="w-1/3">
+        <div class="flex justify-end items-center px-14 mb-5">
+            <button class="restart bg-gray-400 w-8 h-8 p-2 rounded-md flex justify-center items-center" onclick="startGame()">
+                <i class="fa-solid fa-rotate-right"></i>
+            </button>
+        </div>
+        <div class="game--container grid grid-cols-3 grid-row-3 gap-4 text-center ps-11">
+            <div id="0" class="cell"></div>
+            <div id="1" class="cell"></div>
+            <div id="2" class="cell"></div>
+            <div id="3" class="cell"></div>
+            <div id="4" class="cell"></div>
+            <div id="5" class="cell"></div>
+            <div id="6" class="cell"></div>
+            <div id="7" class="cell"></div>
+            <div id="8" class="cell"></div>
+        </div>
+    </section>
+    <h1 class="text-gray-400 absolute bottom-5 text-2xl">unbeatable TicTacToe Agent</h1>
+    <script src="app.js"></script> 
+</body>
+</html>

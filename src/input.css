@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.cell{
+    background-color: #264653;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 75px;
+    height: 75px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+}
